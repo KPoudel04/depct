@@ -154,7 +154,7 @@ depct is built for AI agents to solve this problem, a sort of runtime debugger b
 
 - Node.js >= 20
 - Works with both CommonJS (`require`) and ESM (`import`) projects
-- Zero native dependencies — installs everywhere without a C++ compiler
+- Zero native dependencies
 
 ## License
 
