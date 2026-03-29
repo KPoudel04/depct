@@ -1,0 +1,63 @@
+{
+  "name": "depct2.0",
+  "version": "2.0.1",
+  "description": "Runtime state for AI coding agents. Instruments Node.js apps with zero code changes, captures error patterns with causal chains and arg shape diffs, outputs structured JSON that AI agents consume to fix bugs.",
+  "main": "src/index.cjs",
+  "bin": {
+    "depct": "bin/depct.cjs"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.cjs"
+  },
+  "dependencies": {
+    "sql.js": "^1.14.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "loader/",
+    "shared/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "depct",
+    "ai-agents",
+    "runtime-intelligence",
+    "error-detection",
+    "causal-chains",
+    "shape-diff",
+    "test-generation",
+    "observability",
+    "instrumentation",
+    "claude-code",
+    "cursor",
+    "copilot",
+    "debugging",
+    "nodejs",
+    "cli"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiranpoudel/depct"
+  },
+  "homepage": "https://depct.dev",
+  "depct": {
+    "commands": {
+      "start": "Instrument and run your app. Auto-initializes on first run.",
+      "errors": "Error groups with causal chains, arg shape diffs, blast radius, and frequency trends.",
+      "trace": "Execution traces with nested span trees, timing, and bottleneck detection.",
+      "inspect": "Deep dive on a function: invocations, error rate, latency percentiles, callers/callees.",
+      "build-test": "Test candidates ranked by shape diff quality. Grouped, scored, with reproduction context.",
+      "anomalies": "Behavioral anomalies: error rate spikes, latency changes, traffic shifts vs baselines.",
+      "deps": "External dependencies (APIs, databases, caches) with health scores and latency.",
+      "status": "System health: error groups, traces, functions tracked.",
+      "init": "Explicitly initialize depct in a project (usually not needed — start auto-inits).",
+      "doctor": "Diagnose setup issues: checks Node version, loader, config, database, git."
+    }
+  }
+}
